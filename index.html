@@ -6,284 +6,394 @@
 <title>NOIRÉ — Modern Goods</title>
 
 <style>
-:root{
-  --bg:#f4f4f1;
-  --ink:#111;
-  --muted:#777;
-  --line:#ddd;
-}
-
+:root{--bg:#f4f4f1;--ink:#111;--muted:#777;--line:#ddd}
 *{box-sizing:border-box}
-
 html{scroll-behavior:smooth}
-
-body{
-  margin:0;
-  background:var(--bg);
-  color:var(--ink);
-  font-family:Arial,"Noto Sans KR",sans-serif;
-}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,"Noto Sans KR",sans-serif}
 
 header{
-  position:sticky;
-  top:0;
-  z-index:5;
-  background:#f4f4f1ef;
-  border-bottom:1px solid var(--line);
-  backdrop-filter:blur(10px);
+ position:sticky;top:0;z-index:5;
+ background:#f4f4f1ef;border-bottom:1px solid var(--line);
+ backdrop-filter:blur(10px)
 }
 
 nav{
-  height:70px;
-  max-width:1150px;
-  margin:auto;
-  padding:0 20px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
+ height:70px;max-width:1150px;margin:auto;padding:0 20px;
+ display:flex;align-items:center;justify-content:space-between
 }
 
-.logo{
-  font-size:23px;
-  font-weight:800;
-  letter-spacing:5px;
-}
+.logo{font-size:23px;font-weight:800;letter-spacing:5px}
 
-.links{
-  display:flex;
-  gap:28px;
-}
+.links{display:flex;gap:28px}
+.links a{color:#111;text-decoration:none;font-size:12px;letter-spacing:1px}
 
-.links a{
-  color:#111;
-  text-decoration:none;
-  font-size:12px;
-  letter-spacing:1px;
-}
-
-.cartbtn,
-.primary{
-  background:#111;
-  color:#fff;
-  border:0;
-  border-radius:2px;
-  padding:12px 17px;
-  cursor:pointer;
+.cartbtn,.primary{
+ background:#111;color:#fff;border:0;border-radius:2px;
+ padding:12px 17px;cursor:pointer
 }
 
 .hero{
-  max-width:1150px;
-  margin:auto;
-  padding:90px 20px 75px;
-  display:grid;
-  grid-template-columns:1.2fr .8fr;
-  gap:40px;
-  align-items:end;
+ max-width:1150px;margin:auto;padding:90px 20px 75px;
+ display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:end
 }
 
-.eyebrow{
-  font-size:11px;
-  letter-spacing:3px;
-  color:var(--muted);
-  margin-bottom:20px;
-}
+.eyebrow{font-size:11px;letter-spacing:3px;color:var(--muted);margin-bottom:20px}
 
 h1{
-  font-size:clamp(60px,9vw,115px);
-  line-height:.82;
-  letter-spacing:-6px;
-  margin:0;
+ font-size:clamp(60px,9vw,115px);
+ line-height:.82;letter-spacing:-6px;margin:0
 }
 
 .hero p{
-  max-width:510px;
-  line-height:1.8;
-  color:#555;
-  margin:28px 0;
+ max-width:510px;line-height:1.8;color:#555;margin:28px 0
 }
 
 .heroart{
-  height:320px;
-  background:linear-gradient(135deg,#111,#666 55%,#ddd);
-  position:relative;
-  overflow:hidden;
+ height:320px;
+ background:linear-gradient(135deg,#111,#666 55%,#ddd);
+ position:relative;overflow:hidden
 }
 
 .heroart:after{
-  content:"NOIRÉ";
-  position:absolute;
-  right:-20px;
-  bottom:20px;
-  font-size:75px;
-  font-weight:800;
-  color:#ffffff20;
-  letter-spacing:8px;
+ content:"NOIRÉ";position:absolute;right:-20px;bottom:20px;
+ font-size:75px;font-weight:800;color:#ffffff20;letter-spacing:8px
 }
 
 section{
-  max-width:1150px;
-  margin:auto;
-  padding:30px 20px 85px;
+ max-width:1150px;margin:auto;padding:30px 20px 85px
 }
 
 .top{
-  display:flex;
-  justify-content:space-between;
-  align-items:end;
-  margin-bottom:22px;
+ display:flex;justify-content:space-between;align-items:end;margin-bottom:22px
 }
 
-h2{
-  margin:0;
-  font-size:30px;
-}
-
-.count{
-  font-size:11px;
-  color:#777;
-}
+h2{margin:0;font-size:30px}
+.count{font-size:11px;color:#777}
 
 .grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:18px;
+ display:grid;grid-template-columns:repeat(3,1fr);gap:18px
 }
 
 .card{
-  background:#fff;
-  border:1px solid var(--line);
-  transition:.2s;
+ background:#fff;border:1px solid var(--line);transition:.2s
 }
 
 .card:hover{
-  transform:translateY(-4px);
-  box-shadow:0 12px 30px #0001;
+ transform:translateY(-4px);box-shadow:0 12px 30px #0001
 }
 
 .pic{
-  height:270px;
-  background:linear-gradient(135deg,#e8e8e4,#c8c8c4);
-  display:grid;
-  place-items:center;
-  font-size:58px;
-  color:#1115;
-  position:relative;
+ height:270px;
+ background:linear-gradient(135deg,#e8e8e4,#c8c8c4);
+ display:grid;place-items:center;font-size:58px;color:#1115;
+ position:relative
 }
 
 .tag{
-  position:absolute;
-  left:13px;
-  top:13px;
-  background:#111;
-  color:#fff;
-  padding:6px 9px;
-  font-size:9px;
-  letter-spacing:1px;
+ position:absolute;left:13px;top:13px;background:#111;color:#fff;
+ padding:6px 9px;font-size:9px;letter-spacing:1px
 }
 
-.info{
-  padding:18px;
-}
-
-.cat{
-  font-size:10px;
-  letter-spacing:2px;
-  color:#777;
-}
-
-.name{
-  font-size:18px;
-  margin:7px 0;
-}
-
-.price{
-  font-weight:bold;
-}
+.info{padding:18px}
+.cat{font-size:10px;letter-spacing:2px;color:#777}
+.name{font-size:18px;margin:7px 0}
+.price{font-weight:bold}
 
 .add{
-  width:100%;
-  margin-top:15px;
-  padding:12px;
-  background:#fff;
-  border:1px solid #111;
-  cursor:pointer;
+ width:100%;margin-top:15px;padding:12px;
+ background:#fff;border:1px solid #111;cursor:pointer
 }
 
-.add:hover{
-  background:#111;
-  color:#fff;
-}
+.add:hover{background:#111;color:#fff}
 
 .about{
-  max-width:none;
-  background:#111;
-  color:#fff;
-  padding:75px max(20px,calc((100% - 1110px)/2));
+ max-width:none;background:#111;color:#fff;
+ padding:75px max(20px,calc((100% - 1110px)/2))
 }
 
 .about p{
-  color:#bbb;
-  max-width:650px;
-  line-height:1.8;
+ color:#bbb;max-width:650px;line-height:1.8
 }
 
 footer{
-  max-width:1150px;
-  margin:auto;
-  padding:30px 20px 50px;
-  color:#777;
-  font-size:12px;
-  display:flex;
-  justify-content:space-between;
+ max-width:1150px;margin:auto;padding:30px 20px 50px;
+ color:#777;font-size:12px;display:flex;justify-content:space-between
 }
 
 .drawer{
-  display:none;
-  position:fixed;
-  inset:0;
-  z-index:20;
+ display:none;position:fixed;inset:0;z-index:20
 }
 
-.drawer.show{
-  display:block;
-}
+.drawer.show{display:block}
 
 .shade{
-  position:absolute;
-  inset:0;
-  background:#0007;
+ position:absolute;inset:0;background:#0007
 }
 
 .cart{
-  position:absolute;
-  right:0;
-  top:0;
-  width:min(420px,92vw);
-  height:100%;
-  background:#fff;
-  padding:25px;
-  display:flex;
-  flex-direction:column;
+ position:absolute;right:0;top:0;width:min(420px,92vw);
+ height:100%;background:#fff;padding:25px;
+ display:flex;flex-direction:column
 }
 
 .carthead{
-  display:flex;
-  justify-content:space-between;
-  border-bottom:1px solid #ddd;
-  padding-bottom:18px;
+ display:flex;justify-content:space-between;
+ border-bottom:1px solid #ddd;padding-bottom:18px
 }
 
 .close{
-  border:0;
-  background:none;
-  font-size:24px;
-  cursor:pointer;
+ border:0;background:none;font-size:24px;cursor:pointer
 }
 
-.items{
-  flex:1;
-  overflow:auto;
-}
+.items{flex:1;overflow:auto}
 
 .item{
-  padding:16
+ padding:16px 0;border-bottom:1px solid #eee;
+ display:flex;justify-content:space-between
+}
+
+.remove{
+ border:0;background:none;color:#888;cursor:pointer
+}
+
+.total{
+ border-top:1px solid #ddd;padding-top:18px
+}
+
+.totalrow{
+ display:flex;justify-content:space-between;
+ font-size:18px;font-weight:bold;margin-bottom:15px
+}
+
+.checkout{
+ width:100%;padding:15px;background:#111;color:#fff;border:0;cursor:pointer
+}
+
+@media(max-width:750px){
+ .links{display:none}
+ .hero{grid-template-columns:1fr;padding-top:65px}
+ .heroart{height:210px}
+ .grid{grid-template-columns:1fr}
+ .pic{height:240px}
+ h1{letter-spacing:-4px}
+ footer{display:block;line-height:2}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<div class="logo">NOIRÉ</div>
+
+<div class="links">
+<a href="#shop">SHOP</a>
+<a href="#about">ABOUT</a>
+</div>
+
+<button class="cartbtn" onclick="openCart()">
+CART (<span id="num">0</span>)
+</button>
+</nav>
+</header>
+
+<main>
+
+<div class="hero">
+
+<div>
+<div class="eyebrow">CURATED EVERYDAY GOODS</div>
+
+<h1>LESS.<br>BETTER.</h1>
+
+<p>
+매일 사용하는 물건을 더 깔끔하고 편리하게.
+필요한 것만 골라 담은 NOIRÉ의 라이프스타일 컬렉션.
+</p>
+
+<a href="#shop">
+<button class="primary">SHOP COLLECTION →</button>
+</a>
+</div>
+
+<div class="heroart"></div>
+
+</div>
+
+<section id="shop">
+
+<div class="top">
+<h2>Featured</h2>
+<div class="count">03 PRODUCTS</div>
+</div>
+
+<div class="grid" id="products"></div>
+
+</section>
+
+<div class="about" id="about">
+
+<div class="eyebrow">ABOUT NOIRÉ</div>
+
+<h2>Simple things,<br>chosen better.</h2>
+
+<p>
+NOIRÉ는 매일 쓰는 제품을 깔끔한 기준으로 골라 소개하는
+가상의 라이프스타일 스토어입니다.
+</p>
+
+</div>
+
+</main>
+
+<footer>
+<div>NOIRÉ</div>
+<div>
+Modern goods, simply selected.<br>
+© 2026 NOIRÉ
+</div>
+</footer>
+
+<div class="drawer" id="drawer">
+
+<div class="shade" onclick="closeCart()"></div>
+
+<aside class="cart">
+
+<div class="carthead">
+<b>YOUR CART</b>
+<button class="close" onclick="closeCart()">×</button>
+</div>
+
+<div class="items" id="items"></div>
+
+<div class="total">
+
+<div class="totalrow">
+<span>TOTAL</span>
+<span id="total">₩0</span>
+</div>
+
+<button class="checkout"
+onclick="alert('데모 사이트입니다. 실제 결제 기능은 아직 연결되지 않았습니다.')">
+CHECKOUT
+</button>
+
+</div>
+
+</aside>
+</div>
+
+<script>
+
+const products=[
+ {id:1,n:"Magnetic Desk Stand",c:"DESK",p:29900,s:"◇",t:"BEST"},
+ {id:2,n:"Ambient Mini Lamp",c:"HOME",p:34900,s:"◐",t:"NEW"},
+ {id:3,n:"Compact Travel Case",c:"DAILY",p:24900,s:"□",t:"PICK"}
+];
+
+let cart=[];
+
+const won=n=>"₩"+n.toLocaleString("ko-KR");
+
+function draw(){
+
+document.querySelector("#products").innerHTML=
+
+products.map(x=>`
+
+<article class="card">
+
+<div class="pic">
+
+<span class="tag">${x.t}</span>
+
+${x.s}
+
+</div>
+
+<div class="info">
+
+<div class="cat">${x.c}</div>
+
+<div class="name">${x.n}</div>
+
+<div class="price">${won(x.p)}</div>
+
+<button class="add" onclick="add(${x.id})">
+ADD TO CART
+</button>
+
+</div>
+
+</article>
+
+`).join("");
+
+}
+
+function add(id){
+
+cart.push(products.find(x=>x.id===id));
+
+update();
+openCart();
+
+}
+
+function remove(i){
+
+cart.splice(i,1);
+update();
+
+}
+
+function update(){
+
+num.textContent=cart.length;
+
+items.innerHTML=cart.length?
+
+cart.map((x,i)=>`
+
+<div class="item">
+
+<span>
+<b>${x.n}</b><br>
+${won(x.p)}
+</span>
+
+<button class="remove" onclick="remove(${i})">
+REMOVE
+</button>
+
+</div>
+
+`).join("")
+
+:
+
+'<p style="text-align:center;color:#888;padding:50px 0">Your cart is empty.</p>';
+
+total.textContent=won(
+cart.reduce((a,x)=>a+x.p,0)
+);
+
+}
+
+function openCart(){
+drawer.classList.add("show");
+}
+
+function closeCart(){
+drawer.classList.remove("show");
+}
+
+draw();
+update();
+
+</script>
+
+</body>
+</html>
